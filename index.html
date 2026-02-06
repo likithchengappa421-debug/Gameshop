@@ -14,7 +14,7 @@
           <main>
             <center>
             <section id="contact-form">
-            <h2>Search game</h2>
+            <h2>Search games</h2>
               <img src="Images/Game1.jpeg" width="200" />
               <form method="GET" action="Games-search.php"><br />
 
@@ -22,11 +22,6 @@
                 <input name="Genre" placeholder="Genre" class="list-games" /> <br />
                 <input name="Year" placeholder="Year of release" class="Year-games"/> <br />
                 <input name="Platform" placeholder="PC PS5 XBOX" class="pt-games"/><br />
-
-                 <br />
-                 <input name="Copytype" type="radio" value="Physical" /> Physical copy
-                 <input name="Copytype" type="radio" value="Digital" /> Digital copy
-                 <br />
 
                  <h4>Additional options</h4>
               <label>
@@ -36,8 +31,31 @@
               <label>
                 <input name="recent_release" type="checkbox" /> Recent release
               </label>
-
+                <br />
+                <br />
                 <button type="submit">Submit</button>
+                <br />
+
+                <br />
+                <input name="Copytype" type="radio" value="Physical" /> Physical copy
+                <input name="Copytype" type="radio" value="Digital" /> Digital copy
+                <br />
+
+
+                <h4>Number of copies</h4>
+                <select name="Numberofcopies">
+                  <option value="1">1 - $3.99</option>
+                  <option value="1">2 - $5.99</option>
+                  <option value="1">3 - $7.99</option>
+                  <option value="1">4 - $8.99</option>
+                  <option value="1">5 - $9.99</option>
+                </select>
+
+                <br />
+                <br />
+                <button type="submit">Order</button>
+                <br />
+
               </form>
             </section>
           </center>
